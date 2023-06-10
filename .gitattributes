@@ -1,2 +1,19 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+def determinar_vencedor(posicao_bob, posicao_rex, posicao_oli):
+    distancia_bob = abs(posicao_bob - posicao_oli)
+    distancia_rex = abs(posicao_rex - posicao_oli)
+
+    if distancia_bob == distancia_rex:
+        return "Gato"
+    elif distancia_bob < distancia_rex:
+        return "Bob"
+    else:
+        return "Rex"
+
+posicao_bob = int(input("Digite a posição atual de Bob: "))
+posicao_rex = int(input("Digite a posição atual de Rex: "))
+posicao_oli = int(input("Digite a posição atual de Oli: "))
+
+resultado = determinar_vencedor(posicao_bob, posicao_rex, posicao_oli)
+print("O animal vencedor é:", resultado)
