@@ -1,5 +1,3 @@
-# Auto detect text files and perform LF normalization
-* text=auto
 def determinar_vencedor(posicao_bob, posicao_rex, posicao_oli):
     distancia_bob = abs(posicao_bob - posicao_oli)
     distancia_rex = abs(posicao_rex - posicao_oli)
